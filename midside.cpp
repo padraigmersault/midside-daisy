@@ -6,10 +6,9 @@ using namespace daisy;
 
 static DaisySeed hw;
 
-// Globals for ADC values (updated in main loop)
 float width_target = 1.0f;
 
-// Potentiometer mooth helpers
+// Potentiometer smooth helpers
 static inline float linmap(float x, float in_min, float in_max, float out_min, float out_max)
 {
     float t = (x - in_min) / (in_max - in_min);
@@ -68,5 +67,6 @@ int main(void)
     }
     /* For noise:
     Connect one 1000uf electrolytic cap and one 10nf film cap between ground and VIN. 
-    Connect one 1000uf cap between ground and 3V3.*/
+    Connect one 1000uf cap between ground and 3V3.
+    */
 }
